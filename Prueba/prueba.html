@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de encuestra sobre NJPW</title>
+    <link rel="stylesheet" href="Prueba.Css">
+  </head>
+  <body>
+    <main>
+      <h1 id="main-header">Formulario de encuesta sobre NJPW</h1>
+      <p id="description">¿Eres fan de NJPW? ¡Entonces por favor danos tú opinion en la siguiente encuesta!</p>
+      <form id="survey-form">
+        <label for="name" id="name-label">¡Por favor introduce tú nombre!:</label>
+        <input type="text" id="name" name="name" placeholder="Por favor ingresa tú nombre" required>
+
+        <label for="email" id="email-label">¡Por favor introduce tú nombre!:</label>
+        <input type="email" id="email" name="email" placeholder="Por favor ingresa tú email" required>
+
+        <label for="number" id="number-label">¡Por favor introduce tú numero telefonicó!:</label>
+        <input type="number" id="number" name="number" placeholder="Por favor ingresa tú numero telefonicó" required>
+
+        <label for="dropdown">¿Cual es tú stable favorito en NJPW?</label>
+          <select id="dropdown">
+            <option value="opcion1">Los ingobernables de japón</option>
+            <option value="opcion2" selected>Bullet Club</option>
+            <option value="opcion3">Chaos</option>
+          </select>
+
+        <fieldset>
+          <legend>¿Cual es tú pareja favorita?</legend>
+          <input type="radio" id="opcion1" name="opcion" value="opcion1" checked>
+          <label for="opcion1">Golden Lovers</label>
+          <input type="radio" id="opcion2" name="opcion" value="opcion2">
+          <label for="opcion2">Tetsuya Naito & Evil</label>
+          <input type="radio" id="opcion3" name="opcion" value="opcion3">
+          <label for="opcion3">Kazuchika Okada & Dragon Lee</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>¿Cual es tú etapa favorita de Kenny Omega? (Puedes elegir varías opciones)</legend>
+          <input type="checkbox" id="opcion1" name="opcion" value="opcion1" checked>
+          <label for="opcion1">The Cleaner</label>
+          <input type="checkbox" id="opcion2" name="opcion" value="opcion2">
+          <label for="opcion2">Best Bout Machine</label>
+          <input type="checkbox" id="opcion3" name="opcion" value="opcion3">
+          <label for="opcion3">The Belt Collector</label>
+        </fieldset>
+
+        <label for="comments">Cuentanos. ¿Cómo comenzaste a ver NJPW?</label>
+        <textarea id="comments" value="comments" placeholder="¿Cómo comenzaste a ver NJPW?"></textarea>
+
+        <button type="submit" id="submit">Enviar respuestas</button>
+      </form>
+    </main>
+  </body>
+</html>
